@@ -1,0 +1,20 @@
+{
+  "functions": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "jest.config.js",
+      "local_setup.md",
+      "README.md",
+      "**/.*",
+      "**/node_modules/**",
+      "coverage",
+      "src",
+      "**/*.log"
+    ],
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint",
+      "npm --prefix \"$RESOURCE_DIR\" run build"
+    ]
+  }
+}

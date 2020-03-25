@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "farefirst-debug",
+    "debug": "farefirst-debug",
+    "staging": "farefirst-staging"
+  }
+}
