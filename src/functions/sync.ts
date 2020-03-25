@@ -1,4 +1,4 @@
-import functions from 'firebase-functions';
+import * as functions from 'firebase-functions';
 
 const sync = functions.https.onRequest(async (req, res) => {
   const importedSync = await import('../services/sync');
