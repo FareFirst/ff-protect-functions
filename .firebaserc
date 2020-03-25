@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "farefirst-debug",
-    "debug": "farefirst-debug",
-    "staging": "farefirst-staging"
+    "default": "ff-protect-debug",
+    "debug": "ff-protect-debug",
+    "staging": "ff-protect-staging"
   }
 }

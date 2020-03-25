@@ -6,7 +6,7 @@ const sleep = (): Promise<void> => new Promise((resolve) => {
   }, 2000);
 });
 
-const sync = async (req: functions.Request, res: functions.Response): void => {
+const sync = async (req: functions.Request, res: functions.Response): Promise<void> => {
   // eslint-disable-next-line no-console
   console.log('req.body', req.body);
 
