@@ -1,7 +1,8 @@
-import functions from 'firebase-functions';
+import * as functions from 'firebase-functions';
 
-const getStage = (): string | undefined => functions.config().app
-  && functions.config().app.stage;
+const getConfig = (): functions.config.Config => functions.config();
+
+const getStage = (): string | undefined => getConfig()?.app?.stage;
 
 export {
   // eslint-disable-next-line import/prefer-default-export
